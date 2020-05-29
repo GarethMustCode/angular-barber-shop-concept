@@ -1,0 +1,16 @@
+.bckGrnd-Ani{ 
+    background-color: lightgrey;
+    /* main piller color #9551A5 */
+    background-color: white;
+   background-image: linear-gradient(135deg, #9551A5 25%, transparent 25%, transparent 50%, #9551A5 50%, #9551A5 75%, transparent 75%, transparent);
+ background-position: 0rem -244rem;
+   background-size: 10rem 10rem;
+   animation: stripes 16s linear infinite; 
+   
+  
+}
+
+@keyframes stripes {
+    0% {  background-position: 0 0; } 
+    100% {  background-position: 60rem 0;  }
+  }
