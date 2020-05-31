@@ -1,0 +1,31 @@
+<head>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="111301674322-hmisbbob6mbajhj1g401ljbjuoqek6ru.apps.googleusercontent.com">
+
+</head>
+<!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+
+<mat-card>
+    <button mat-raised-button >Google sign in</button>
+    <form class="myForm">
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+        <input matInput placeholder="example@gmail.com">
+        <mat-hint>Email details needed</mat-hint>
+        <mat-error>Please enter vaild email</mat-error>
+        <mat-error>Email is <strong>required</strong>
+        </mat-error>
+        </mat-form-field>
+    </form>
+</mat-card>
+
+<script>
+    function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+
+</script>
