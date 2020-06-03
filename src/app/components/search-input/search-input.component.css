@@ -1,0 +1,11 @@
+.example-form-field {
+    width: 60%;
+    display: block;
+    margin: 1em auto;
+    
+  }
+ input{
+background-color: rgba(241, 234, 234, 0.438);
+  }
+
+  

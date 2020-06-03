@@ -10,6 +10,13 @@
   
 }
 
+.example-header-image {
+  text-shadow: black;
+  margin: 0 2rem;
+  background-image: url('../../../../icons/barber-pole.png');
+  background-size: cover;
+}
+
 @keyframes stripes {
     0% {  background-position: 0 0; } 
     100% {  background-position: 60rem 0;  }
